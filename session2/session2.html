@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+     <!-- action ==> search -->
+   
+        <!-- block element -->
+
+    <form>
+        <fieldset>
+            <legend>Employee Details</legend>
+       
+        <div>
+            <label> First Name : </label>
+            <input type="text" name="firstName" required pattern="[A-bc-z]+">
+        </div>
+        <br>
+        <div> 
+            <label> Last Name : </label>
+           <input type="text" name="lastName" required minlength="5"pattern="[A-bc-z]+" >
+       </div>
+       <br>
+
+<div>
+    <label>Mobile :</label>
+    <input type="tel" name="mobile" required pattern="01[0125][0-9]{8}">
+</div>
+
+<br>
+
+<div>
+    <label>Courses :</label>
+    <input list="courses" name="course">
+
+<datalist id="courses">
+    <option value="HTML">
+    <option value="CSS">
+    <option value="JavaScript">
+    <option value="PHP">
+</datalist>
+</div>
+
+  <br>
+
+   <div>
+   <label>Upload Image :</label>
+    <input type="file" name="image" accept=".png">
+</div>
+
+<br>
+
+<div>
+    <label>Comment :</label><br>
+    <textarea name="comment" rows="4" cols="25" required></textarea>
+</div>
+
+    <br>
+     <div>
+<label>Date Of Birth :</label>
+<input type="date" name="birthDate" required>
+</div>
+    
+   <br>
+  <div>
+<label>Gender :</label>
+
+      <input type="radio" name="gender" value="male" required>
+      <label>Male</label>
+      <input type="radio" name="gender" value="female">
+      <label>Female</label>
+    </div>
+
+<br>
+  <div>
+            <label>Track</label>
+            <input type="checkbox" name="track" value="0"><label>Frontend</label>
+            <input type="checkbox" name="track" value="1"><label>backed</label>
+            <input type="checkbox" name="track" value="2"><label>Network</label>
+        </div>
+
+ <br>
+  <div>
+     <label>range</label>
+        <input type="range" name="range" min="10" max="100" >
+  </div>
+        <br>
+         <div>
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear Data">
+
+        </div>      
+            
+        </fieldset>
+     </form>
+</body>
+</html>
+     
