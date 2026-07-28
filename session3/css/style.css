@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    box-sizing: border-box;
+}
+
+
+
+
+#btn-teal {
+    color: plum;
+}
+
+
+
+h1 {
+    color: rgb(157, 53, 88);
+}
+
+#custom-color {
+    color: rgb(218, 32, 141);
+}
+
+
+.text-gray {
+    color: palevioletred;
+}
+
+
+h2 {
+    color: rgb(205, 136, 148);
+}
+
+
+
+.custom-style{
+    background-color:white;
+    color: white;
+    width: 34%;
+    font-size: 22px;
+
+    padding: 3%;
+
+    margin: 3% auto;
+
+    border: 5px solid pink;
+    border-radius: 20px 5px 20px 5px;
+}
+
+/* border ==> style color width */
+
+.custom-style p {
+    background-color: rgb(212, 131, 131);
+    padding: 3%;
+
+}
+
+
+
+
+.bg-light {
+    background-color: #e7b7b7;
+}
+
+.text-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.padding-top-bottom {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.card {
+    width: 30%;
+    /* box-shadow => x-shadow y-shadow blur spread color */
+    box-shadow: 0px 0px 4px 2px rgb(235, 181, 181);
+    display: inline-block;
+}
+
+.container {
+
+   
+    width: 90%;
+    margin:auto;
+    
+}
+
+.card-body {
+    padding: 5%;
+}
+
+.card-body p {
+    margin: 2% 2%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+.margin-left-right{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.card-sm {
+    width: 30%;
+    border: 3px solid ;
+    padding: 2%;
+    background-color: rgb(255, 241, 241);
+    color: #c97b7b;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.margin-left-right{
+    /* margin: 0% 5%; */
+}
