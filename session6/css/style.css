@@ -125,3 +125,74 @@ a{
     }
 
 }
+
+.wellbeing{
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+.wellbeing h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 35px;
+}
+
+.wellbeing-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.card{
+    width: 30%;
+}
+
+.card .icon{
+    width: 50px;
+    height: 50px;
+    background-color: #2b7a78;
+    color: white;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+.card h3{
+    margin-bottom: 15px;
+}
+
+.card p{
+    color: gray;
+    line-height: 1.6;
+}
+
+.image{
+    width: 35%;
+}
+
+.image img{
+    width: 100%;
+}
+
+@media (max-width:768px){
+
+    .wellbeing-content{
+        flex-direction: column;
+    }
+
+    .card,
+    .image{
+        width: 100%;
+        text-align: center;
+    }
+
+    .card .icon{
+        margin: 0 auto 15px;
+    }
+
+}
