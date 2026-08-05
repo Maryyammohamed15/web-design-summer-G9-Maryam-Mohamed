@@ -47,17 +47,6 @@ a{
     cursor:pointer;
 }
 
-@media (max-width:768px){
-
-.nav-links{
-    display:none;
-}
-
-.menu{
-    display:block;
-}
-
-}
 
 .hero{
     padding: 70px 0;
@@ -105,26 +94,6 @@ a{
     border-radius: 15px;
 }
 
-@media (max-width:768px){
-
-    .hero h1{
-        width:100%;
-        font-size:32px;
-    }
-
-    .hero p{
-        width:100%;
-    }
-
-    .hero-images{
-        flex-direction:column;
-    }
-
-    .hero-images .image{
-        width:100%;
-    }
-
-}
 
 .wellbeing{
     background:rgb(242, 241, 241);
@@ -146,9 +115,11 @@ a{
 }
 
 .cards{
-    width:65%;
+    border-radius: 24px;
+    padding: 60px;
+    justify-content: space-between;
     display:flex;
-    gap:30px;
+    align-items: center;
 }
 
 .icon{
@@ -182,21 +153,495 @@ a{
     width:350px;
 }
 
+
+
+.organic-section{
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+}
+
+.organic-image{
+    width: 45%;
+}
+
+.organic-image img{
+    width: 90%;
+    border-radius: 20px;
+}
+
+.organic-info{
+    width: 50%;
+}
+
+.organic-info h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.organic-text{
+    color: gray;
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.organic-item{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.organic-icon{
+    width: 55px;
+    height: 55px;
+    border: 2px solid #5ca6ad;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.organic-icon i{
+    color: #5ca6ad;
+    font-size: 22px;
+}
+
+.organic-item p{
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.organic-item span{
+    color: gray;
+}
+
+.join{
+    width: 90%;
+    margin: 90px auto;
+    position: relative;
+}
+
+.join-img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+.join-icon{
+
+    font-size: 40px;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+}
+
+
+.join-content{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+   
+}
+.join button{
+    margin-top: 90px;
+    padding: 20px 70px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.join-box{
+    width: 90%;
+    height: 50%;
+    background:#FCE2D7;
+    border-radius: 20px;
+    padding-left: 10%;
+padding-right: 10%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,.1);
+}
+
+
+.box-item i{
+    width: 50px;
+    height: 50px;
+
+    border: 2px solid white;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #5d9892;
+    font-size: 28px;
+
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.box-item h4{
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.footer {
+ position: absolute;
+ top: 3150px; 
+ left: 50%;
+ transform: translateX(-50%);
+ width: 100vw; 
+ height: 245px;
+ background-color: #2b5c5e;
+ color: #ffffff;
+ padding: 78px 139px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ box-sizing: border-box;
+}
+.footer-left {
+ display: flex;
+ flex-direction: column;
+ gap: 24px;
+}
+
+.footer-logo {
+width: 88;
+height: 26;
+object-fit: contain;
+}
+
+.social-icons {
+ display: flex;
+ gap: 16px;
+}
+
+.social-icons img {
+ width: 22px;
+ height: 22px;
+ object-fit: contain;
+}
+
+.footer-right {
+ display: flex;
+ gap: 32px;
+}
+
+.footer-right a {
+ color: #ffffff;
+ text-decoration: none;
+ font-size: 14px;
+ font-weight: 500;
+}
+
+/* ==========================
+        Responsive
+========================== */
+
+/* Tablet */
+@media (max-width:992px){
+
+    .container{
+        width:90%;
+    }
+
+    .hero h1{
+        width:90%;
+        font-size:40px;
+    }
+
+    .hero p{
+        width:80%;
+    }
+
+    .wellbeing-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .card{
+        margin-bottom:30px;
+    }
+
+    .image img{
+        width:300px;
+    }
+
+    .organic-section{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .organic-image,
+    .organic-info{
+        width:100%;
+    }
+
+    .organic-image img{
+        width:100%;
+    }
+
+    .organic-item{
+        justify-content:center;
+        text-align:left;
+    }
+
+    .join-content{
+        width:80%;
+        top:40%;
+    }
+
+    .join-content h2{
+        font-size:35px;
+    }
+
+    .join-box{
+        width:95%;
+        padding:30px;
+        gap:20px;
+    }
+
+    /* Footer */
+
+    .footer{
+        position:relative;
+        top:auto;
+        left:auto;
+        transform:none;
+        width:100%;
+        height:auto;
+        padding:50px;
+    }
+
+    .footer-left{
+        gap:20px;
+    }
+
+    .footer-right{
+        gap:25px;
+    }
+
+}
+
+
+/* Mobile */
 @media (max-width:768px){
+
+    .nav-links{
+        display:none;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .hero h1{
+        width:100%;
+        font-size:32px;
+    }
+
+    .hero p{
+        width:100%;
+    }
+
+    .hero-images{
+        flex-direction:column;
+    }
+
+    .hero-images .image{
+        width:100%;
+    }
+
+    .wellbeing h2{
+        text-align:center;
+        font-size:32px;
+    }
 
     .wellbeing-content{
         flex-direction:column;
     }
 
-    .cards{
-        width:90%;
-        flex-direction:column;
+    .card{
+        text-align:center;
+        margin-bottom:30px;
     }
-
 
     .icon{
         margin:0 auto 20px;
     }
 
+    .image img{
+        width:250px;
+    }
+
+    .organic-section{
+        flex-direction:column;
+    }
+
+    .organic-image,
+    .organic-info{
+        width:100%;
+        text-align:center;
+    }
+
+    .organic-info h2{
+        font-size:34px;
+    }
+
+    .organic-item{
+        justify-content:center;
+    }
+
+    .join-img{
+        height:650px;
+    }
+
+    .join-content{
+        width:90%;
+        top:35%;
+    }
+
+    .join-content h2{
+        font-size:28px;
+    }
+
+    .join-content p{
+        font-size:15px;
+    }
+
+    .join button{
+        padding:15px 50px;
+        font-size:16px;
+        margin-top:30px;
+    }
+
+    .join-box{
+        flex-direction:column;
+        gap:30px;
+        padding:30px;
+        bottom:-180px;
+    }
+
+    .join{
+        margin-bottom:260px;
+    }
+
+    /* Footer */
+
+    .footer{
+        position:relative;
+        top:auto;
+        left:auto;
+        transform:none;
+        width:100%;
+        height:auto;
+
+        padding:40px 20px;
+
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+
+        text-align:center;
+        gap:25px;
+    }
+
+    .footer-left{
+        align-items:center;
+        gap:20px;
+    }
+
+    .social-icons{
+        justify-content:center;
+        flex-wrap:wrap;
+    }
+
+    .footer-right{
+        flex-direction:column;
+        align-items:center;
+        gap:18px;
+    }
+
+}
+
+
+/* Small Mobile */
+@media (max-width:576px){
+
+    .hero{
+        padding:50px 0;
+    }
+
+    .hero h1{
+        font-size:26px;
+    }
+
+    .btn{
+        width:100%;
+    }
+
+    .wellbeing h2,
+    .organic-info h2,
+    .join-content h2{
+        font-size:26px;
+    }
+
+    .join-img{
+        height:700px;
+    }
+
+    .join-box{
+        padding:20px;
+    }
+
+    .box-item h4{
+        font-size:16px;
+    }
+
+    /* Footer */
+
+    .footer{
+        padding:30px 15px;
+    }
+
+    .footer-logo{
+        width:70px;
+        height:auto;
+    }
+
+    .footer-right a{
+        font-size:13px;
+    }
+
+    .social-icons{
+        gap:12px;
+    }
 
 }
